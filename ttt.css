@@ -1,57 +1,42 @@
-
-div
-{
-  display: flex;  
+div {
+  display: flex;
 }
 
-
-input
-{
-    border:black solid 1px;
-    width:100px;
-    height:100px;
-
-    font-size: 40px;
-    text-align: center;
-    background-color: rgb(80, 74, 74);
-    color: whitesmoke;
-    font-weight: bold;
-    font-size:67px;
+input {
+  border: indianred solid 1px;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  text-align: center;
+  background-color: rgb(80, 74, 74);
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 67px;
 }
-#main
-{
- margin-left: 500px;
- 
- margin-top: 200px;
-    width: 10px;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
+#main {
+  margin-left: 500px;
+  margin-top: 200px;
+  width: 10px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
 }
-body
-{
-
-  background-color:rgb(44, 194, 194) ;
+body {
+  background-color: rgb(44, 194, 194);
 }
-p
-{
-
+p {
   font-size: 36px;
   color: rgb(0, 0, 0);
-  
   font-style: italic;
-  font-weight:bold ;
+  font-weight: bold;
 }
-button
-{
-  color:transparent;
+button {
+  color: transparent;
   background-color: transparent;
   border: none;
   font-size: 33px;
   margin-left: 646px;
-  
 }
-#displayMessage
-{
+#displayMessage {
   -webkit-text-stroke: 0.6px rgb(238, 232, 232);
 }
