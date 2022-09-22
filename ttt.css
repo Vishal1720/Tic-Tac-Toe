@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 div {
   display: flex;
 }
@@ -23,12 +24,14 @@ input {
 }
 body {
   background-color: rgb(44, 194, 194);
+  font-family: 'Nunito', sans-serif;
 }
 p {
   font-size: 36px;
   color: rgb(0, 0, 0);
   font-style: italic;
   font-weight: bold;
+  font-family: 'Nunito', sans-serif;
 }
 button {
   color: transparent;
@@ -39,4 +42,5 @@ button {
 }
 #displayMessage {
   -webkit-text-stroke: 0.6px rgb(238, 232, 232);
+  font-family: 'Nunito', sans-serif;
 }
