@@ -66,7 +66,7 @@ function mcheckWin(x, y, z) {
     bWin = true;
     bStat++;
     bstat.textContent = bStat;
-    msg.textContent = "You Lose";
+    msg.textContent = "You lose";
     msg.style.color = "Red";
 
     retry();
