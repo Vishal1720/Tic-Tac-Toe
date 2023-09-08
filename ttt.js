@@ -28,7 +28,6 @@ function clik(x) {
   if (pWin == false && bWin == false) {
     console.log("inside clik()");
     if (box[x].value == "") {
-      console.log("inside if");
       box[x].value = "X";
       checkWin();
       if (pWin == false && bWin == false) {
@@ -82,6 +81,7 @@ function checkWin() {
   mcheckWin(3, 4, 5);
   mcheckWin(0, 3, 6);
   mcheckWin(6, 7, 8);
+  //below condition to check if all elements are filled to display retry button
   if (
     box[0].value != "" &&
     box[1].value != "" &&
@@ -117,13 +117,14 @@ function resetValues() {
 }
 
 function subValue(i, j, k) {
-  if (req == true) {
+               if (req == true) {
     if (box[4].value == "") {
-      box[4].value = "O";
+      box[4].value = "O";//by default fills the center of the box if empty
       req = false;
     }
   }
 
+  //conditions for two boxes that have the same value O so that the bot can win by filling the remaining box
   if (req == true) {
     if (box[i].value == "O" && box[j].value == "O") {
       if (box[k].value == "") {
@@ -153,6 +154,7 @@ function subValue(i, j, k) {
 }
 
 function mainValue() {
+  //checking for chances that bot can win directly if two boxes have same value O 
   subValue(0, 4, 8);
   subValue(1, 4, 7);
   subValue(0, 1, 2);
@@ -161,6 +163,7 @@ function mainValue() {
   subValue(0, 3, 6);
   subValue(6, 7, 8);
   subValue(2, 5, 8);
+  // preventing chances for user to win if there are two consecutive boxes have X 
   xValue(0, 4, 8);
   xValue(1, 4, 7);
   xValue(0, 1, 2);
@@ -169,6 +172,7 @@ function mainValue() {
   xValue(0, 3, 6);
   xValue(6, 7, 8);
   xValue(2, 5, 8);
+
 
   subValue(2, 5, 8);
   if (req === true) {
@@ -214,3 +218,6 @@ function xValue(i, j, k) {
     }
   }
 }
+
+
+
