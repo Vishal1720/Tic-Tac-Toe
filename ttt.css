@@ -1,31 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+body {
+  background-color: rgb(91, 113, 161);
+  font-family: 'Nunito', sans-serif;
+}
+header{background-color: rgb(49, 57, 170);}
+h1{
+  font-size: 79px;
+  margin-left:35%;
+  color:white;
+  margin-bottom:10px;
+  margin-top:-10px;
+}
+nav{
+  background-color: rgb(49, 57, 120);
+  margin-top:-9.5px;
+  font-size:54px;
+  color:white;
+  height:75px; 
+}
+#homelink{
+  margin-left:17%;
+  
+}
+a{color:white;
+  text-decoration:none;
+  margin-left:40px;
+  margin-top:70px;
+}
+
+a:hover{
+  background-color: rgb(42, 57, 156);
+}
 div {
   display: flex;
 }
+#box-0, #box-2,#box-6,#box-8{
+  border:none;
+}
+#box-4{
+  border:solid 6px black;
+  border-left:none;
+  border-right:none;
+}
+#box-1{
+  border:solid 6px black;
+  border-top:none;
+  border-bottom:none;
+}
+#box-3{
+  border:solid 6px black;
+  border-left:none;
+}
+#box-5{
+  border:solid 6px black;
+  border-right:none;
+}
+#box-7{
+  border:solid 6px black;
+  border-bottom:none;
+  border-top:none;
+}
+input:focus{outline:none;
+}
 
 input {
-  border: indianred solid 1px;
-  width: 100px;
-  height: 100px;
-  font-size: 50px;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  font-size: 130px;
   text-align: center;
-  background-color: rgb(80, 74, 74);
-  color: whitesmoke;
+  
+  background-color:transparent;
+   color: whitesmoke;
   font-weight: bold;
-  font-size: 67px;
+  
 }
+
 #main {
   margin-left: 500px;
-  margin-top: 200px;
+  margin-top: 40px;
   width: 10px;
   height: 20px;
   display: flex;
   flex-direction: column;
 }
-body {
-  background-color: rgb(44, 194, 194);
-  font-family: 'Nunito', sans-serif;
-}
+
 p {
   font-size: 36px;
   color: rgb(0, 0, 0);
@@ -38,6 +97,7 @@ button {
   background-color: transparent;
   border: none;
   font-size: 33px;
+  margin-top:84px;
   margin-left: 646px;
 }
 #displayMessage {
