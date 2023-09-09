@@ -12,9 +12,9 @@
       <h1>Tic Tac Toe</h1>
     </header>
     <nav>
-      <a href="index.html" target="_self" id="homelink">Home</a>
+      <a href="index.html" target="_self" id="homelink"  >Home</a>
       <a href="ttt.html" target="_self">Computer</a>
-      <a href="pvp.html" target="_self">PVP</a>
+      <a href="pvp.html" target="_self" class="highlight">PVP</a>
       <a href="highscores.html" target="_self">HighScore </a>
     </nav>
     <div id="main">
@@ -40,11 +40,12 @@
         <input type="text" id="box-8" onclick="pvpclick(8)" class="box" readonly />
       </div>
     </div>
-    <p id="displayMessage"></p>
-    <p>Player 1</p>
+    <p id="displayMessage" class="stat"></p>
+    <p class="stat" id="P1">Player 1</p>
     <p id="pstat" class="stat"></p>
-    <p>Player 2</p>
+    <p class="stat" id="P2">Player 2</p>
     <p id="bstat" class="stat"></p>
+    <button id="nameChange" onclick="changename()" >Change Names?</button>
     <button id="retry" onclick="resetValues()">Retry??</button>
     <script src="pvp.js"></script>
   </body>
