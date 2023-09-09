@@ -33,7 +33,7 @@ function clik(x) {
       if (pWin == false && bWin == false) {
         setTimeout(function () {
           botValue();
-        }, 150);
+        }, 250);
       }
     }
   }
@@ -101,6 +101,8 @@ function retry() {
   tr.style.color = "black";
   tr.style.backgroundColor = "white"; //for background-color write in camel case without'-'
   tr.style.border = "black 3px solid";
+  tr.style.marginLeft="444px";
+  
 }
 
 function resetValues() {
@@ -111,9 +113,7 @@ function resetValues() {
   for (i = 0; i < box.length; i++) {
     box[i].value = "";
   }
-  tr.style.color = "transparent";
-  tr.style.backgroundColor = "transparent";
-  tr.style.border = "transparent";
+  tr.style.marginLeft="-444px";
 }
 
 function subValue(i, j, k) {
@@ -217,6 +217,20 @@ function xValue(i, j, k) {
       }
     }
   }
+}
+
+function change1name(){
+  a=document.getElementById("nameChanges");
+  a.style.marginLeft="-500px";
+  pl=document.getElementById("pl1");
+  pl.contentEditable=true;
+  console.log(pl);
+  pl.focus();
+  pl.addEventListener("keydown",function(event){
+    if(event.key=="Enter"){
+      pl.contentEditable=false;
+    }
+});
 }
 
 
