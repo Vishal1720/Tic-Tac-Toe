@@ -10,6 +10,7 @@ h1{
   color:white;
   margin-bottom:10px;
   margin-top:-10px;
+  text-shadow: 2px 3px 0px black;
 }
 nav{
   background-color: rgb(49, 57, 120);
@@ -26,10 +27,15 @@ a{color:white;
   text-decoration:none;
   margin-left:40px;
   margin-top:70px;
+  text-shadow: 2px 3px 0px black;
 }
 
 a:hover{
-  background-color: rgb(42, 57, 156);
+  background-color: rgb(61, 92, 205);
+  
+}
+.highlight{
+  background-color: rgb(61, 92, 205);
 }
 div {
   display: flex;
@@ -38,31 +44,35 @@ div {
   border:none;
 }
 #box-4{
-  border:solid 6px black;
+  border:solid 8px black;
   border-left:none;
   border-right:none;
 }
 #box-1{
-  border:solid 6px black;
+  border:solid 8px black;
   border-top:none;
   border-bottom:none;
 }
 #box-3{
-  border:solid 6px black;
+  border:solid 8px black;
   border-left:none;
 }
 #box-5{
-  border:solid 6px black;
+  border:solid 8px black;
   border-right:none;
 }
 #box-7{
-  border:solid 6px black;
+  border:solid 8px black;
   border-bottom:none;
   border-top:none;
 }
 input:focus{outline:none;
 }
-
+input[type="button"]{
+  width: auto;
+  height:auto;
+  margin-top:10%;
+}
 input {
   cursor: pointer;
   width: 150px;
@@ -75,7 +85,8 @@ input {
   font-weight: bold;
   
 }
-
+input[type="text"]{
+  text-shadow: 5px 5px 3px black;}
 #main {
   margin-left: 500px;
   margin-top: 40px;
@@ -92,13 +103,48 @@ p {
   font-weight: bold;
   font-family: 'Nunito', sans-serif;
 }
-button {
+button[id="retry"] {
   color: transparent;
   background-color: transparent;
   border: none;
-  font-size: 33px;
-  margin-top:84px;
-  margin-left: 646px;
+  font-size: 44px;
+  margin-top:10px;
+  border-radius: 7px;
+  margin-left: -444px;
+}
+button[id="nameChange"],button[id="nameChanges"]{
+  font-size: 30px;
+}
+#displayMessage {
+  -webkit-text-stroke: 0.6px rgb(238, 232, 232);
+  font-family: 'Nunito', sans-serif;
+}
+#htp{color:rgb(68, 55, 55);
+}
+span{
+  color:black;  
+}
+h3{
+  margin-left:37%;
+  font-size:54px;
+}
+
+#text1,#text2{
+  margin-left:10%;
+  color:white;
+  text-shadow: 2px 3px 4px black;
+}
+#pvphead{
+  margin-left:43%;
+}
+h3{
+  color:whitesmoke;
+  text-shadow: 2px 3px 0px black;
+}
+
+.stat{
+  color:white;
+  text-shadow: 2px 3px 0px black;
 }
 #displayMessage {
   -webkit-text-stroke: 0.6px rgb(238, 232, 232);
