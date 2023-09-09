@@ -32,12 +32,38 @@ function pvpclick(x) {
     checkWin();
   }
 
+  function changename(){
+    btn=document.getElementById("nameChange");
+    btn.style.backgroundColor="transparent";
+    btn.style.marginLeft="-300px";
+    btn.style.color="transparent";
+    btn.style.border="none";
+    p1=document.getElementById("P1");
+    p2=document.getElementById("P2");
+    p1.contentEditable=true;
+    p1.focus();
+    p1.addEventListener("keydown",function(event){
+      if(event.key == "Enter"){
+        p1.contentEditable=false;
+        p2.contentEditable=true;
+        p2.focus();
+      }
+    });
+    p2.addEventListener("keydown",function(event){  
+      if(event.key== "Enter"){
+        p2.contentEditable=false;
+      }
+    })
+    
+    
+  }
+
   function mcheckWin(x, y, z) {
     if (box[x].value == "X" && box[y].value == "X" && box[z].value == "X") {
       //checks left to right diag line for player
       console.log("You WIN");
       p1Win = true;
-      msg.textContent = "You Win ";
+      msg.textContent = "Player 1 Wins";
       msg.style.color = "blue";
       p1Stat++;
       pstat.textContent = p1Stat;
@@ -51,7 +77,7 @@ function pvpclick(x) {
       p2Win = true;
       p2Stat++;
       bstat.textContent = p2Stat;
-      msg.textContent = "You lose";
+      msg.textContent = "Player 2 Wins";
       msg.style.color = "Red";
   
       retry();
@@ -87,6 +113,7 @@ function pvpclick(x) {
     tr.style.color = "black";
     tr.style.backgroundColor = "white"; //for background-color write in camel case without'-'
     tr.style.border = "black 3px solid";
+    tr.style.marginLeft="444px";
   }
 
   function resetValues() {
@@ -97,7 +124,6 @@ function pvpclick(x) {
     for (i = 0; i < box.length; i++) {
       box[i].value = "";
     }
-    tr.style.color = "transparent";
-    tr.style.backgroundColor = "transparent";
-    tr.style.border = "transparent";
+    tr.style.marginLeft="-444px";
+    
   }
