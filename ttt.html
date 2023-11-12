@@ -16,8 +16,8 @@
       <a href="ttt.html" target="_self" class="highlight">Computer</a>
       <a href="pvp.html" target="_self">PVP</a>
       <a href="highscores.html" target="_self">HighScore </a>
-    </nav>
-    <div id="main">
+    </nav> 
+    <div id="main" style="margin-top:6% ;">
       <div>
         <input type="text" id="box-0" onclick="clik(0)" readonly /><input
           type="text"
@@ -26,6 +26,7 @@
           readonly
         /><input type="text" id="box-2" onclick="clik(2)" readonly />
       </div>
+
       <div>
         <input type="text" id="box-3" onclick="clik(3)" readonly /><input
           type="text"
@@ -34,6 +35,7 @@
           readonly
         /><input type="text" id="box-5" onclick="clik(5)" readonly />
       </div>
+
       <div>
         <input type="text" id="box-6" onclick="clik(6)" readonly /><input
           type="text"
@@ -43,12 +45,13 @@
         /><input type="text" id="box-8" onclick="clik(8)" readonly />
       </div>
     </div>
-    <p id="displayMessage" class="stat"></p>
+    
+    <p id="displayMessage" class="stat">Good Luck</p>
     <p class="stat" id="pl1" >Player</p>
     <p id="pstat" class="stat"></p>
     <p class="stat">Computer</p>
     <p id="bstat" class="stat"></p>
-    <button id="nameChanges" onclick="change1name()" >Change Names?</button>
+    <button id="nameChanges" onclick="change1name()" >Change Names?</button><br>
     <button id="retry" onclick="resetValues()">Retry??</button>
     
     <script src="ttt.js"></script>
