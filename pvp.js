@@ -110,10 +110,10 @@ function pvpclick(x) {
   }
   
   function retry() {
-    tr.style.color = "black";
-    tr.style.backgroundColor = "white"; //for background-color write in camel case without'-'
+    tr.style.color = "white";
+  tr.style.backgroundColor = "#023E8A";
     tr.style.border = "black 3px solid";
-    tr.style.marginLeft="444px";
+    tr.style.marginLeft="654px";
   }
 
   function resetValues() {
@@ -125,5 +125,6 @@ function pvpclick(x) {
       box[i].value = "";
     }
     tr.style.marginLeft="-444px";
+    
     
   }
