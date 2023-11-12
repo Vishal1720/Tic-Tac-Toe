@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 body {
-  background-color: rgb(91, 113, 161);
+  background-color: #0096C7;
   font-family: 'Nunito', sans-serif;
 }
 header{background-color: rgb(49, 57, 170);}
@@ -13,7 +13,7 @@ h1{
   text-shadow: 2px 3px 0px black;
 }
 nav{
-  background-color: rgb(49, 57, 120);
+  background-color:#0077B6;
   margin-top:-9.5px;
   font-size:54px;
   color:white;
@@ -31,11 +31,11 @@ a{color:white;
 }
 
 a:hover{
-  background-color: rgb(61, 92, 205);
+  background-color: #023E8A;
   
 }
 .highlight{
-  background-color: rgb(61, 92, 205);
+  background-color: #023E8A;
 }
 div {
   display: flex;
@@ -72,6 +72,7 @@ input[type="button"]{
   width: auto;
   height:auto;
   margin-top:10%;
+  background-color: #03045E;
 }
 input {
   cursor: pointer;
@@ -103,17 +104,25 @@ p {
   font-weight: bold;
   font-family: 'Nunito', sans-serif;
 }
+
 button[id="retry"] {
   color: transparent;
   background-color: transparent;
   border: none;
-  font-size: 44px;
+  font-size: 37px;
   margin-top:10px;
-  border-radius: 7px;
-  margin-left: -444px;
+  border-radius: 10px;
+  margin-left: -400px;
+  border-radius:10px;
+  padding: 7px;
+  
 }
 button[id="nameChange"],button[id="nameChanges"]{
-  font-size: 30px;
+  font-size: 25px;
+  padding: 7px;
+  border-radius:10px;
+  background-color: #023E8A;
+  color:white;
 }
 #displayMessage {
   -webkit-text-stroke: 0.6px rgb(238, 232, 232);
@@ -145,8 +154,4 @@ h3{
 .stat{
   color:white;
   text-shadow: 2px 3px 0px black;
-}
-#displayMessage {
-  -webkit-text-stroke: 0.6px rgb(238, 232, 232);
-  font-family: 'Nunito', sans-serif;
 }
